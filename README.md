@@ -16,6 +16,7 @@ or
 ## How use
 
 Once installed open the console of your choice and type:
+
 `gh-cli --help`
 
 or in abbreviated form:

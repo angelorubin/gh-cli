@@ -1,21 +1,21 @@
 {
   "name": "gh-cli",
   "version": "1.0.0",
-  "description": "A command-line tool",
+  "description": "A command-line interface",
   "author": "Angelo Rogerio Rubin <angelorubin@gmail.com>",
   "license": "MIT",
   "bin": {
-    "gh-cli": "gh-cli.js"
+    "gh-cli": "cli.js"
   },
   "keywords": [
     "gh-cli",
-    "CLI",
     "github",
     "command-line interface"
   ],
   "dependencies": {
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
+    "cli-table": "^0.3.1",
     "yargs": "^11.0.0"
   }
 }
