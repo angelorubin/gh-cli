@@ -1,11 +1,11 @@
 # GH-CLI
 ## A simple command-line interface for searching public data in Github
 
-## Requirements
+### **Requirements**
 
 You must have [Node.js](https://nodejs.org) installed on your machine.
 
-## Install
+### **Install**
 
 `npm i gh-cli -S`
 
@@ -13,7 +13,7 @@ or
 
 `yarn add gh-cli`
 
-## How use
+### **How use**
 
 Once installed open the console of your choice and type:
 
@@ -25,3 +25,8 @@ or in abbreviated form:
 
 This way you can see all available options.
 
+### **Commands**
+
+| Commands      | Options   |
+| -             | -         |
+| getSingleUser | username  |
