@@ -3,9 +3,11 @@
 
 ### **Requirements**
 
-You must have [Node.js](https://nodejs.org) installed on your machine.
+You must have [Node.js](https://nodejs.org) and [NPM](https://www.npmjs.com/get-npm) installed on your computer.
 
 ### **Install**
+
+Open your console and type:
 
 `npm i gh-cli -S`
 
@@ -13,9 +15,7 @@ or
 
 `yarn add gh-cli`
 
-### **How use**
-
-Once installed open the console of your choice and type:
+### **How to use**
 
 `gh-cli --help`
 
@@ -27,6 +27,7 @@ This way you can see all available options.
 
 ### **Commands**
 
-| Commands      | Options   |
-| -             | -         |
-| getSingleUser | username  |
+|     Commands    | Shortcut Commands | Positional Argument Required | Positional Argument Required (Shortcut) | Positional Argument Optional |
+|:---------------:|:-----------------:|:----------------------------:|:---------------------------------------:|:----------------------------:|
+| get-single-user |        gsu        |          --username          |                    -u                   |             none             |
+| list-user-repos |        lur        |          --username          |                    -u                   |             none             |
