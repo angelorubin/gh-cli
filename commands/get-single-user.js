@@ -2,16 +2,19 @@ const chalk = require('chalk')
 const http = require('../plugins/http')
 const Table = require('cli-table')
 
-exports.command = 'getSingleUser'
-exports.describe = 'Provides publicly available information about someone with a GitHub account.'
-exports.builder = {
-  username: {
-    demandOption: true,
-    describe: 'Name required to perform the search',
-    alias: 'u'
-  }
+exports.command = 'getSingleUser <username>'
+exports.aliases = ['getSingleUser', 'gsu']
+exports.desc = 'Provides publicly available information about someone with a GitHub account.'
+exports.builder = yargs => {
+  return yargs
+  .positional(
+    'username', {
+      desc: 'Username in github', 
+      type: 'string'
+    }
+  )
+  .help()
 }
-  
 exports.handler = function (argv) {
   // do something with argv.
   if(argv.username.length > 0) {
@@ -24,13 +27,8 @@ exports.handler = function (argv) {
           tableUser.push({[chalk.blue(key)] : `${user[key]}`})
         }
       }
-      
       console.log(tableUser.toString())
-    
     })
     .catch( err => console.log('No user with this name was found.'))
-  }
-  else {
-    console.log(chalk.red('Enter a username'))
   }
 }
